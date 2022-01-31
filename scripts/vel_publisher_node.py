@@ -7,7 +7,7 @@ import rospy
 from geometry_msgs.msg import Twist
 
 if __name__ == '__main__':
-	# declare a publisher to publish turtle velocity command
+# declare a publisher to publish turtle velocity command
 	cmd_pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
 	# initialize the ROS node
 	rospy.init_node('vel_publisher_node', anonymous=True)
